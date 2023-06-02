@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TemplateEngine
 {
-    public class FileScenario
+    public class FileWithoutPartialScenario
     {
         private readonly RazorLightEngine _engine;
 
@@ -22,7 +22,7 @@ namespace TemplateEngine
             }
         }
 
-        public FileScenario(RazorLightEngine engine)
+        public FileWithoutPartialScenario(RazorLightEngine engine)
         {
             _engine = engine;
         }
