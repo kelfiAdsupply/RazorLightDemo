@@ -47,8 +47,8 @@ Console.WriteLine("----------------------------------------\n");
 Console.WriteLine("\n\n\n\n");
 
 Console.WriteLine("File Scenario");
-var fileScenario = new FileScenario(engine);
-Console.WriteLine($"Template: \n{FileScenario.Template}");
+var fileScenario = new FileWithoutPartialScenario(engine);
+Console.WriteLine($"Template: \n{FileWithoutPartialScenario.Template}");
 Console.WriteLine("----------------------------------------\n");
 
 Console.WriteLine("Start Compiled");
