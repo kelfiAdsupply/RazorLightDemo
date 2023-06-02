@@ -1,0 +1,14 @@
+﻿<html>
+<head>
+</head>
+<body>
+    <p>These are the users:</p>
+    @{
+        await IncludeAsync("Partial.cshtml", ViewBag.Users);
+
+    }
+    Sincerely,
+    <br />
+    The @ViewBag.CompanyName Team
+</body>
+</html>

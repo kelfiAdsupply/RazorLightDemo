@@ -1,0 +1,28 @@
+﻿@model TemplateEngine.TemplateWithoutPartialViewModel
+
+<html>
+<head>
+</head>
+<body>
+Hi @Model.UserName,
+<br/><br/>
+@if (Model.SiteNames.Length == 1)
+{
+    <p>
+        Site <b>@Model.SiteNames.First()</b> is attached to this email.
+    </p>
+}
+else
+{
+    <p>
+        Sites <b>@string.Join(", ", Model.SiteNames)</b> are attached to this email.
+    </p>
+}
+<p>
+    Support team at <a href="mailto:@Model.SupportEmail">@Model.SupportEmail</a>.
+</p>
+
+Sincerely,<br/>
+The @Model.CompanyName Team
+</body>
+</html>
