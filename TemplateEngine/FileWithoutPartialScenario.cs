@@ -9,18 +9,7 @@ namespace TemplateEngine
     {
         private readonly RazorLightEngine _engine;
 
-        public static string Template
-        {
-            get
-            {
-                string fileTemplate;
-                using (var stream = new StreamReader($"{Environment.CurrentDirectory}\\Views\\TemplateWithoutPartial.cshtml"))
-                {
-                    fileTemplate = stream.ReadToEnd();
-                }
-                return fileTemplate;
-            }
-        }
+        public static string Template => File.ReadAllText($"{Environment.CurrentDirectory}\\Views\\TemplateWithoutPartial.cshtml");
 
         public FileWithoutPartialScenario(RazorLightEngine engine)
         {
