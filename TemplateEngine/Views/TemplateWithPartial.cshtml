@@ -3,9 +3,9 @@
 </head>
 <body>
     <p>These are the users:</p>
+@{ await IncludeAsync("Partial.cshtml", ViewBag.Users);}
     @{
-        await IncludeAsync("Partial.cshtml", ViewBag.Users);
-
+        await IncludeAsync("Partials\\Partial2.cshtml", ViewBag.Users);
     }
     Sincerely,
     <br />

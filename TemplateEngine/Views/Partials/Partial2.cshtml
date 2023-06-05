@@ -1,0 +1,13 @@
+﻿<ul>
+    @foreach (var user in ViewBag.Users)
+    {
+        <b>@(ToUpper(user))</b>
+    }
+</ul>
+
+@{
+    string ToUpper(string character)
+    {
+        return character.ToUpper();
+    }
+}

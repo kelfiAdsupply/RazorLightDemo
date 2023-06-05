@@ -10,5 +10,10 @@ namespace TemplateEngine
         public string[] SiteNames { get; set; }
         public string CompanyName { get; set; }
         public string SupportEmail { get; set; }
-    }
+
+        public string GetSignature(string name)
+        {
+            return "Hey " + name;
+        }
+}
 }

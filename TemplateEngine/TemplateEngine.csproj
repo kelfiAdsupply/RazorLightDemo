@@ -9,7 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Views\_layout.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Views\Partial.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Partials\Partial2.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\TemplateWithPartial.cshtml">

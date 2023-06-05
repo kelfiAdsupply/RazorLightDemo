@@ -1,9 +1,9 @@
 ﻿@model TemplateEngine.TemplateWithoutPartialViewModel
 
-<html>
-<head>
-</head>
-<body>
+@{
+    Layout = "_layout.cshtml";
+}
+
 Hi @Model.UserName,
 <br/><br/>
 @if (Model.SiteNames.Length == 1)
@@ -24,5 +24,4 @@ else
 
 Sincerely,<br/>
 The @Model.CompanyName Team
-</body>
-</html>
+@Model.GetSignature("John")
