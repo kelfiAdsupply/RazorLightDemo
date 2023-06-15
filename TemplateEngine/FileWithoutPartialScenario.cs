@@ -19,6 +19,7 @@ namespace TemplateEngine
         public async Task<string> GetTemplate(TemplateWithoutPartialViewModel model)
         {
             var compiled = await _engine.CompileRenderAsync("TemplateWithoutPartial.cshtml", model);
+            Console.WriteLine(model.CompanyName);
             return compiled;
         }
     }
